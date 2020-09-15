@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Контакты - Умный дом в Челябинске.</title>
+<link rel="shortcut icon" href="../storage/favicon.png" type="image/png">
+<link rel="stylesheet" href="../storage/fonts/Awesome_4.7.css">
+<link rel="stylesheet" href="contacts.css">
+<script type="text/javascript" src = "contacts.js"></script>
+<script type="text/javascript" src = "../storage/jquery.js"></script>
+<script type="text/javascript" src = "../storage/jquery.cookie.js"></script>
+<script type="text/javascript" src = "../storage/forAll.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(54463402, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54463402" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<header>
+<div id="div1H"></div>
+<div id="div2H"><span>г. Челябинск, IT Park, ул. Молодогвардейцев, 31, 4 эт.</span></div>
+<div id="div3H"><div id="iconCalk"></div><span>Калькулятор<br>стоимости</span></div>
+<div id="div4H"><span>8 (351) 225-65-01<br>8 (499) 347-51-30</span></div>
+<div id="div5H"><span>Заказать звонок</span></div>
+</header>
+<nav>
+<div id="div01N"></div>
+<div id="div1N"><span>Главная</span></div>
+<div id="div2N"><span>Проекты</span></div>
+<div id="div3N"><span>Стоимость</span></div>
+<div id="div4N"><span>Контакты</span></div>
+<div id="div5N"><span>Умный дом</span></div>
+</nav>
+<div id="umbrela"></div>
+<section id="section1">
+<h1>КОНТАКТЫ</h1>
+<div id="card">
+<ul>
+<li class="numberPhone">8 (351) 225-65-01</li>
+<li class="numberPhone">8 (499) 347-5130</li>
+<li class="address">454021 г. Челябинск, ул. Молодогвардейцев, 31, 4 этаж</li>
+<li class="email">da@insycompany.ru</li>
+</ul>
+</div>
+<div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+    	  var coordinates = {lat: 55.1886441, lng: 61.32382678};
+    	  var cursor = {lat: 55.1886441, lng: 61.33382678};
+    	  if(document.documentElement.clientWidth<=850){
+    		  coordinates = cursor;
+    	  }
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: coordinates,
+          zoom: 15
+        });
+        marker = new google.maps.Marker({
+            position: cursor,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
+      }
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfr9F1oSgziodzOuadwHOahD5wcY2Z2FU&callback=initMap"
+    async defer></script>
+</section>
+<footer>
+<div class="umbrela"></div>
+<h3>ОСТАЛИСЬ ВОПРОСЫ?</h3>
+<p style="font-size:120%">Заполните поля формы и мы свяжимся с вами</p>
+<input class="customerName" type="text" placeholder="Ваше имя"><br>
+<input class="customerPhone" type="tel" placeholder="Контактный телефон"><br>
+<input class="customerCheck" type="checkbox">Согласен(на) на обработку своих персональных данных<br>
+<input class="customerSubmit" type="button" value="ЗАПИСАТСЯ">
+<p id="footer2019">&copy;INSY, 2019. Все права защищены.</p>
+</footer>
+<div id="orderBack">
+<div id="orderDiv">
+<h3>ЗАКАЗАТЬ ЗВОНОК</h3>
+<input class="customerName" type="text" placeholder="Ваше имя"><br>
+<input class="customerPhone" type="tel" placeholder="Контактный телефон"><br>
+<input class="customerCheck" type="checkbox">Согласен(на) на обработку своих персональных данных<br>
+<input class="customerSubmit" type="button" value="ЗАПИСАТСЯ">
+</div>
+</div>
+</body>
+</html>
