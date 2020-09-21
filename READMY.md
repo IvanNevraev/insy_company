@@ -1,1 +1,0 @@
-#insy_company
