@@ -1,2 +1,2 @@
 # insy_company
-nevraev.myjino.ru
+http://nevraev.myjino.ru
